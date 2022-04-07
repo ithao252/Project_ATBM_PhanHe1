@@ -48,3 +48,4 @@ D:\STUDY\N3_HK2\ATBM-HTTT\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.d
 D:\STUDY\N3_HK2\ATBM-HTTT\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.GrantRevokeRole.resources
 D:\STUDY\N3_HK2\ATBM-HTTT\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.updateRole.resources
 D:\STUDY\N3_HK2\ATBM-HTTT\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.UpdateUserInfo.resources
+D:\STUDY\N3_HK2\ATBM-HTTT\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.ListPrivilege.resources

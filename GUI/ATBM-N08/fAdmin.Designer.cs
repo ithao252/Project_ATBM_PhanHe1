@@ -43,7 +43,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_Table = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_Privilege = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -63,7 +63,7 @@
             this.panel1.Controls.Add(this.OPTION);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.btn_Table);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btn_Privilege);
             this.panel1.Controls.Add(this.btn_Role);
             this.panel1.Controls.Add(this.btn_Home);
             this.panel1.Controls.Add(this.button1);
@@ -225,21 +225,21 @@
             this.btn_Table.UseVisualStyleBackColor = true;
             this.btn_Table.Click += new System.EventHandler(this.btn_Table_Click);
             // 
-            // button3
+            // btn_Privilege
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::ATBM_N08.Properties.Resources.monitor_24px;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(12, 225);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(166, 53);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "PRIVILEGE";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn_Privilege.FlatAppearance.BorderSize = 0;
+            this.btn_Privilege.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Privilege.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Privilege.ForeColor = System.Drawing.Color.White;
+            this.btn_Privilege.Image = global::ATBM_N08.Properties.Resources.monitor_24px;
+            this.btn_Privilege.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Privilege.Location = new System.Drawing.Point(12, 225);
+            this.btn_Privilege.Name = "btn_Privilege";
+            this.btn_Privilege.Size = new System.Drawing.Size(166, 53);
+            this.btn_Privilege.TabIndex = 2;
+            this.btn_Privilege.Text = "PRIVILEGE";
+            this.btn_Privilege.UseVisualStyleBackColor = true;
+            this.btn_Privilege.Click += new System.EventHandler(this.btn_Privilege_Click);
             // 
             // button1
             // 
@@ -290,7 +290,7 @@
         private System.Windows.Forms.Label OPTION;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btn_Table;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_Privilege;
         private System.Windows.Forms.Button btn_Role;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
