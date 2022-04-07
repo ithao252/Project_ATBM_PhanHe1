@@ -52,6 +52,26 @@
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Oracle.DataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
     <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
@@ -71,12 +91,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\BUS_User.cs" />
-    <Compile Include="DAO\DAO_User.cs" />
-    <Compile Include="DAO\DatabaseConnect.cs" />
-    <Compile Include="DTO\DTO_User.cs" />
-    <Compile Include="AddTable.cs">
+    <Compile Include="CheckPrivilege.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CheckPrivilege.Designer.cs">
+      <DependentUpon>CheckPrivilege.cs</DependentUpon>
+    </Compile>
+    <Compile Include="createRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createRole.Designer.cs">
+      <DependentUpon>createRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\DAO_User.cs" />
+    <Compile Include="DAO\DatabaseConnect.cs" />
+    <Compile Include="deleteRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteRole.Designer.cs">
+      <DependentUpon>deleteRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\DTO_User.cs" />
     <Compile Include="AddTable.Designer.cs">
       <DependentUpon>AddTable.cs</DependentUpon>
     </Compile>
@@ -110,6 +145,12 @@
     <Compile Include="fAdmin.Designer.cs">
       <DependentUpon>fAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="GrantRevokeRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrantRevokeRole.Designer.cs">
+      <DependentUpon>GrantRevokeRole.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +180,27 @@
     <EmbeddedResource Include="AddTable.resx">
       <DependentUpon>AddTable.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="updateRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateRole.Designer.cs">
+      <DependentUpon>updateRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateUserInfo.Designer.cs">
+      <DependentUpon>UpdateUserInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CheckPrivilege.resx">
+      <DependentUpon>CheckPrivilege.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createRole.resx">
+      <DependentUpon>createRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteRole.resx">
+      <DependentUpon>deleteRole.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fAddUser.resx">
       <DependentUpon>fAddUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fAdmin.resx">
       <DependentUpon>fAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrantRevokeRole.resx">
+      <DependentUpon>GrantRevokeRole.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -175,6 +240,12 @@
     </Compile>
     <EmbeddedResource Include="TableManage.resx">
       <DependentUpon>TableManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateRole.resx">
+      <DependentUpon>updateRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateUserInfo.resx">
+      <DependentUpon>UpdateUserInfo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
