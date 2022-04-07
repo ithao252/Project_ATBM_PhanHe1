@@ -42,7 +42,13 @@ namespace ATBM_N08
             loadform(new fListUser());
            
         }
-        
+        private void btn_Role_Click(object sender, EventArgs e)
+        {
+            SlidePanel.Height = btn_Role.Height;
+            SlidePanel.Top = btn_Role.Top;
+            loadform(new ListRole());
+        }
+
         private void controlListUser1_Load(object sender, EventArgs e)
         {
 
@@ -64,16 +70,14 @@ namespace ATBM_N08
             p.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            SlidePanel.Height = button2.Height;
-            SlidePanel.Top = button2.Top;
-            loadform(new ListRole());
-        }
-
         private void btn_Home_Click(object sender, EventArgs e)
         {
             loadform(new Home());
+
+        }
+
+        private void fAdmin_Load(object sender, EventArgs e)
+        {
 
         }
     }

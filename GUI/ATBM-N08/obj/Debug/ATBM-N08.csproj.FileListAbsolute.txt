@@ -19,3 +19,29 @@ C:\Users\Nguyen Thanh Thao\Downloads\atbm\ATBM-N08\ATBM-N08\obj\Debug\ATBM_N08.R
 C:\Users\Nguyen Thanh Thao\Downloads\atbm\ATBM-N08\ATBM-N08\obj\Debug\ATBM_N08.Home.resources
 C:\Users\Nguyen Thanh Thao\Downloads\atbm\ATBM-N08\ATBM-N08\obj\Debug\ATBM_N08.ListRole.resources
 C:\Users\Nguyen Thanh Thao\Downloads\atbm\ATBM-N08\ATBM-N08\obj\Debug\ATBM_N08.fListUser.resources
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\bin\Debug\ATBM-N08.exe.config
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\bin\Debug\ATBM-N08.exe
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\bin\Debug\ATBM-N08.pdb
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\bin\Debug\Oracle.DataAccess.dll
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\bin\Debug\Oracle.ManagedDataAccess.dll
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM-N08.csproj.AssemblyReference.cache
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM-N08.csproj.SuggestedBindingRedirects.cache
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.fAddUser.resources
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.fListUser.resources
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.fLogin.resources
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.fAdmin.resources
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.Home.resources
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.ListRole.resources
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.PrivilegeManage.resources
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.Properties.Resources.resources
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.TableManage.resources
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM-N08.csproj.GenerateResource.cache
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM-N08.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM-N08.csproj.CopyComplete
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM-N08.exe
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM-N08.pdb
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.GrantRevokeRole.resources
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.createRole.resources
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.updateRole.resources
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.deleteRole.resources

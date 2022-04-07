@@ -16,5 +16,10 @@ namespace ATBM_N08
         {
             InitializeComponent();
         }
+
+        private void btn_CreateUser_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

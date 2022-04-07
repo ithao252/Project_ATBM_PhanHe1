@@ -15,7 +15,7 @@ namespace ATBM_N08.DAO
         protected static OracleConnection _conn = null;
         public static void InitConnection(String username, String password)
         {
-            String connectionString = $"Data Source=localhost:1521/ORCL;User ID = {username}; Password={password}";
+            String connectionString = $"Data Source=10.211.55.5:1521/XE;User ID = {username}; Password={password}";
             
             OracleConnection connection = null;
             try
