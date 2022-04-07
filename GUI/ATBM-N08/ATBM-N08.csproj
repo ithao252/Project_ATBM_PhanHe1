@@ -52,6 +52,26 @@
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Oracle.DataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
     <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
@@ -71,6 +91,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\BUS_User.cs" />
+    <Compile Include="CheckPrivilege.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckPrivilege.Designer.cs">
+      <DependentUpon>CheckPrivilege.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAO\DAO_User.cs" />
     <Compile Include="DAO\DatabaseConnect.cs" />
     <Compile Include="DTO\DTO_User.cs" />
@@ -130,6 +156,15 @@
     <Compile Include="TableManage.Designer.cs">
       <DependentUpon>TableManage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateUserInfo.Designer.cs">
+      <DependentUpon>UpdateUserInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CheckPrivilege.resx">
+      <DependentUpon>CheckPrivilege.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fAddUser.resx">
       <DependentUpon>fAddUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TableManage.resx">
       <DependentUpon>TableManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateUserInfo.resx">
+      <DependentUpon>UpdateUserInfo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
