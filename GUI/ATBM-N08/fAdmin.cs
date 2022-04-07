@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ATBM_N08.DAO;
+using ATBM_N08.BUS;
 
 namespace ATBM_N08
 {
@@ -16,8 +18,8 @@ namespace ATBM_N08
         public fAdmin()
         { 
             InitializeComponent();
-
             
+
         }
 
         public void loadform(object Form)
@@ -40,6 +42,7 @@ namespace ATBM_N08
             SlidePanel.Height = button1.Height;
             SlidePanel.Top = button1.Top;
             loadform(new fListUser());
+
            
         }
         private void btn_Role_Click(object sender, EventArgs e)
@@ -72,6 +75,8 @@ namespace ATBM_N08
 
         private void btn_Home_Click(object sender, EventArgs e)
         {
+            SlidePanel.Height = btn_Home.Height;
+            SlidePanel.Top = btn_Home.Top;
             loadform(new Home());
 
         }

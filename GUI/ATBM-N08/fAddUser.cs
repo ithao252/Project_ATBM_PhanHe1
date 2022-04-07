@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ATBM_N08.BUS;
 
 namespace ATBM_N08
 {
@@ -19,7 +20,21 @@ namespace ATBM_N08
 
         private void btn_CreateUser_Click(object sender, EventArgs e)
         {
+            String username = txtbUsername.Text;
+            String password = txtbPass.Text;
 
+
+            try
+            {
+                BUS_User.Instance.CreateUser(username, password);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+
+            MessageBox.Show($"{username} created successfully!");
         }
     }
 }
