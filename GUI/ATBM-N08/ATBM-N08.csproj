@@ -130,12 +130,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RoleManage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RoleManage.Designer.cs">
-      <DependentUpon>RoleManage.cs</DependentUpon>
-    </Compile>
     <Compile Include="TableManage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,9 +173,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RoleManage.resx">
-      <DependentUpon>RoleManage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TableManage.resx">
       <DependentUpon>TableManage.cs</DependentUpon>
     </EmbeddedResource>

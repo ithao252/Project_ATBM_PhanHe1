@@ -17,10 +17,33 @@ namespace ATBM_N08
             InitializeComponent();
         }
 
-        private void btn_add_Click(object sender, EventArgs e)
+        private void dtgv_ListUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            RoleManage r = new RoleManage();
-            r.Show();
+
+        }
+
+        private void btn_createRole_Click(object sender, EventArgs e)
+        {
+            createRole c = new createRole();
+            c.Show();
+        }
+
+        private void btn_updateRole_Click(object sender, EventArgs e)
+        {
+            updateRole u = new updateRole();
+            u.Show();
+        }
+
+        private void btn_deleteRole_Click(object sender, EventArgs e)
+        {
+            deleteRole d = new deleteRole();
+            d.Show();
+        }
+
+        private void btn_grant_revokeRole_Click(object sender, EventArgs e)
+        {
+            GrantRevokeRole g = new GrantRevokeRole();
+            g.Show();
         }
     }
 }
