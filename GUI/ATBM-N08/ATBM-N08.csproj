@@ -93,6 +93,7 @@
     <Compile Include="AddTable.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BUS\BUS_Table.cs" />
     <Compile Include="BUS\BUS_User.cs" />
     <Compile Include="CheckPrivilege.cs">
       <SubType>Form</SubType>
@@ -106,6 +107,7 @@
     <Compile Include="createRole.Designer.cs">
       <DependentUpon>createRole.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\DAO_Table.cs" />
     <Compile Include="DAO\DAO_User.cs" />
     <Compile Include="DAO\DatabaseConnect.cs" />
     <Compile Include="deleteRole.cs">
@@ -114,6 +116,7 @@
     <Compile Include="deleteRole.Designer.cs">
       <DependentUpon>deleteRole.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\DTO_Table.cs" />
     <Compile Include="DTO\DTO_User.cs" />
     <Compile Include="AddTable.Designer.cs">
       <DependentUpon>AddTable.cs</DependentUpon>

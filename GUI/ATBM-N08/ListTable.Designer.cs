@@ -28,52 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_add = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dtgv_Table = new System.Windows.Forms.DataGridView();
+            this.btn_add_table = new System.Windows.Forms.Button();
+            this.btn_detail_table = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_Table)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtgv_Table
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 34);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(712, 378);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgv_Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_Table.Location = new System.Drawing.Point(0, 34);
+            this.dtgv_Table.Name = "dtgv_Table";
+            this.dtgv_Table.Size = new System.Drawing.Size(712, 378);
+            this.dtgv_Table.TabIndex = 0;
             // 
-            // btn_add
+            // btn_add_table
             // 
-            this.btn_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btn_add.FlatAppearance.BorderSize = 0;
-            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.Location = new System.Drawing.Point(262, 2);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(152, 26);
-            this.btn_add.TabIndex = 9;
-            this.btn_add.Text = "CREATE NEW TABLE";
-            this.btn_add.UseVisualStyleBackColor = false;
-            this.btn_add.Click += new System.EventHandler(this.btn_addTable_Click);
+            this.btn_add_table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btn_add_table.FlatAppearance.BorderSize = 0;
+            this.btn_add_table.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add_table.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_table.ForeColor = System.Drawing.Color.White;
+            this.btn_add_table.Location = new System.Drawing.Point(150, 2);
+            this.btn_add_table.Name = "btn_add_table";
+            this.btn_add_table.Size = new System.Drawing.Size(152, 26);
+            this.btn_add_table.TabIndex = 9;
+            this.btn_add_table.Text = "CREATE NEW TABLE";
+            this.btn_add_table.UseVisualStyleBackColor = false;
+            this.btn_add_table.Click += new System.EventHandler(this.btn_addTable_Click);
             // 
-            // fListUser
+            // btn_detail_table
+            // 
+            this.btn_detail_table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btn_detail_table.FlatAppearance.BorderSize = 0;
+            this.btn_detail_table.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_detail_table.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_detail_table.ForeColor = System.Drawing.Color.White;
+            this.btn_detail_table.Location = new System.Drawing.Point(400, 2);
+            this.btn_detail_table.Name = "btn_detail_table";
+            this.btn_detail_table.Size = new System.Drawing.Size(200, 26);
+            this.btn_detail_table.TabIndex = 10;
+            this.btn_detail_table.Text = "VIEW DETAILS OF TABLE";
+            this.btn_detail_table.UseVisualStyleBackColor = false;
+            this.btn_detail_table.Click += new System.EventHandler(this.btn_Detail_Click);
+            // 
+            // ListTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(716, 417);
-            this.Controls.Add(this.btn_add);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btn_add_table);
+            this.Controls.Add(this.btn_detail_table);
+            this.Controls.Add(this.dtgv_Table);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ListTable";
             this.Text = "ListTable";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.ListTable_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_Table)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.DataGridView dtgv_Table;
+        private System.Windows.Forms.Button btn_add_table;
+        private System.Windows.Forms.Button btn_detail_table;
     }
 }

@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Oracle.DataAccess.Client;
-using ATBM_N08.DAO;
+using ATBM_N08.BUS;
 
 namespace ATBM_N08
 {
@@ -21,8 +20,26 @@ namespace ATBM_N08
 
         private void btn_addTable_Click(object sender, EventArgs e)
         {
-            AddTable a = new AddTable();
-            a.Show();
+            AddTable add_table = new AddTable();
+            add_table.Show();
+        }
+
+        private void ListTable_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                dtgv_Table.DataSource = BUS_Table.Instance.GetAllTables();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btn_Detail_Click(object sender, EventArgs e)
+        {
+            TableManage detail_table = new TableManage();
+            detail_table.Show();
         }
     }
 }

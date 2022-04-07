@@ -142,9 +142,9 @@
             this.Controls.Add(this.table_name_textbox);
             this.Controls.Add(this.table_name_label);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "TableManage";
+            this.Name = "AddTable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TableManage";
+            this.Text = "AddTable";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

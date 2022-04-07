@@ -16,13 +16,13 @@ namespace ATBM_N08
         {
             InitializeComponent();
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_findTable_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Insert(dataGridView1.Rows.Count-1, table_name_textbox.Text.ToString(), "a");
+            dtgv_table.Rows.Insert(dtgv_table.Rows.Count-1, table_name_textbox.Text.ToString(), "a");
             table_name_textbox.Text = "";
         }
 
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        private void dtgv_table_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }
