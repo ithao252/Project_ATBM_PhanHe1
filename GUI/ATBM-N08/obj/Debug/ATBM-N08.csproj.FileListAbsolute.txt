@@ -45,3 +45,5 @@ C:\Users\Nguyen Thanh Thao\Downloads\atbm\ATBM-N08\ATBM-N08\obj\Debug\ATBM_N08.f
 \\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.createRole.resources
 \\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.updateRole.resources
 \\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.deleteRole.resources
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.CheckPrivilege.resources
+\\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.UpdateUserInfo.resources
