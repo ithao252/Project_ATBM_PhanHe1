@@ -209,7 +209,7 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // button4
+            // buttonTable
             // 
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -223,7 +223,7 @@
             this.button4.TabIndex = 2;
             this.button4.Text = "TABLE";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.buttonTable_Click);
             // 
             // button3
             // 

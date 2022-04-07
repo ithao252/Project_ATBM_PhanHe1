@@ -48,12 +48,11 @@ namespace ATBM_N08
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonTable_Click(object sender, EventArgs e)
         {
             SlidePanel.Height = button4.Height;
             SlidePanel.Top = button4.Top;
-            TableManage t = new TableManage();
-            t.Show();
+            loadform(new ListTable());
         }
 
         private void button3_Click(object sender, EventArgs e)

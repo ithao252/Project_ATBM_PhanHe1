@@ -53,9 +53,9 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Oracle.DataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
-    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
-    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.OracleClient" />
@@ -74,11 +74,23 @@
     <Compile Include="DAO\DAO_User.cs" />
     <Compile Include="DAO\DatabaseConnect.cs" />
     <Compile Include="DTO\DTO_User.cs" />
+    <Compile Include="AddTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTable.Designer.cs">
+      <DependentUpon>AddTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="fAddUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fAddUser.Designer.cs">
       <DependentUpon>fAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListTable.Designer.cs">
+      <DependentUpon>ListTable.cs</DependentUpon>
     </Compile>
     <Compile Include="fListUser.cs">
       <SubType>Form</SubType>
@@ -130,8 +142,14 @@
     <Compile Include="TableManage.Designer.cs">
       <DependentUpon>TableManage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddTable.resx">
+      <DependentUpon>AddTable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fAddUser.resx">
       <DependentUpon>fAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListTable.resx">
+      <DependentUpon>ListTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fListUser.resx">
       <DependentUpon>fListUser.cs</DependentUpon>
