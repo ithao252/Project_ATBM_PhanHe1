@@ -90,6 +90,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BUS\BUS_User.cs" />
     <Compile Include="CheckPrivilege.cs">
       <SubType>Form</SubType>

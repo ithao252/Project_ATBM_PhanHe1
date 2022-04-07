@@ -57,10 +57,10 @@ namespace ATBM_N08
 
         }
 
-        private void buttonTable_Click(object sender, EventArgs e)
+        private void btn_Table_Click(object sender, EventArgs e)
         {
-            SlidePanel.Height = button4.Height;
-            SlidePanel.Top = button4.Top;
+            SlidePanel.Height = btn_Table.Height;
+            SlidePanel.Top = btn_Table.Top;
             loadform(new ListTable());
         }
 

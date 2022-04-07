@@ -35,14 +35,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.userPanel = new System.Windows.Forms.Panel();
    
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_Role = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btn_Home = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_Table = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -62,9 +62,9 @@
             this.panel1.Controls.Add(this.SlidePanel);
             this.panel1.Controls.Add(this.OPTION);
             this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.btn_Table);
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btn_Role);
             this.panel1.Controls.Add(this.btn_Home);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -127,20 +127,20 @@
             // 
     
             // 
-            // button2
+            // btn_Role
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(12, 166);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(166, 53);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "ROLE";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_Role.FlatAppearance.BorderSize = 0;
+            this.btn_Role.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Role.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Role.ForeColor = System.Drawing.Color.White;
+            this.btn_Role.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Role.Location = new System.Drawing.Point(12, 166);
+            this.btn_Role.Name = "btn_Role";
+            this.btn_Role.Size = new System.Drawing.Size(166, 53);
+            this.btn_Role.TabIndex = 2;
+            this.btn_Role.Text = "ROLE";
+            this.btn_Role.UseVisualStyleBackColor = true;
+            this.btn_Role.Click += new System.EventHandler(this.btn_Role_Click);
             // 
             // button5
             // 
@@ -209,21 +209,21 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // buttonTable
+            // btn_Table - Table
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::ATBM_N08.Properties.Resources.report_card_24px;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(12, 284);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(166, 53);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "TABLE";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.buttonTable_Click);
+            this.btn_Table.FlatAppearance.BorderSize = 0;
+            this.btn_Table.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Table.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Table.ForeColor = System.Drawing.Color.White;
+            this.btn_Table.Image = global::ATBM_N08.Properties.Resources.report_card_24px;
+            this.btn_Table.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Table.Location = new System.Drawing.Point(12, 284);
+            this.btn_Table.Name = "btn_Table";
+            this.btn_Table.Size = new System.Drawing.Size(166, 53);
+            this.btn_Table.TabIndex = 2;
+            this.btn_Table.Text = "TABLE";
+            this.btn_Table.UseVisualStyleBackColor = true;
+            this.btn_Table.Click += new System.EventHandler(this.btn_Table_Click);
             // 
             // button3
             // 
@@ -289,9 +289,9 @@
         private System.Windows.Forms.Panel SlidePanel;
         private System.Windows.Forms.Label OPTION;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_Table;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Role;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel userPanel;
