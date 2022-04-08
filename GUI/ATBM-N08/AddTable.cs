@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace ATBM_N08
 {
-    public partial class TableManage : Form
+    public partial class AddTable : Form
     {
-        public TableManage()
+        public AddTable()
         {
             InitializeComponent();
         }
-        private void btn_findTable_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            dtgv_table.Rows.Insert(dtgv_table.Rows.Count-1, table_name_textbox.Text.ToString(), "a");
+            dataGridView1.Rows.Insert(dataGridView1.Rows.Count - 1, table_name_textbox.Text.ToString(), "a");
             table_name_textbox.Text = "";
         }
 
-        private void dtgv_table_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }

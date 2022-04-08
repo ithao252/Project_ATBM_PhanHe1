@@ -57,20 +57,18 @@ namespace ATBM_N08
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btn_Table_Click(object sender, EventArgs e)
         {
-            SlidePanel.Height = button4.Height;
-            SlidePanel.Top = button4.Top;
-            TableManage t = new TableManage();
-            t.Show();
+            SlidePanel.Height = btn_Table.Height;
+            SlidePanel.Top = btn_Table.Top;
+            loadform(new ListTable());
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn_Privilege_Click(object sender, EventArgs e)
         {
-            SlidePanel.Height = button3.Height;
-            SlidePanel.Top = button3.Top;
-            PrivilegeManage p = new PrivilegeManage();
-            p.Show();
+            SlidePanel.Height = btn_Privilege.Height;
+            SlidePanel.Top = btn_Privilege.Top;
+            loadform(new ListPrivilege());
         }
 
         private void btn_Home_Click(object sender, EventArgs e)

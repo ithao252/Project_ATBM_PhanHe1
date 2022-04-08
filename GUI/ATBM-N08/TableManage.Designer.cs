@@ -30,94 +30,122 @@
         {
             this.table_name_label = new System.Windows.Forms.Label();
             this.table_name_textbox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btn_find_table = new System.Windows.Forms.Button();
+            this.dtgv_table = new System.Windows.Forms.DataGridView();
+            this.col_tabname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_colname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_datatype = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_nullable = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_key = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_table)).BeginInit();
             this.SuspendLayout();
             // 
             // table_name_label
             // 
             this.table_name_label.AutoSize = true;
-            this.table_name_label.Location = new System.Drawing.Point(21, 20);
+            this.table_name_label.Location = new System.Drawing.Point(28, 25);
+            this.table_name_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.table_name_label.Name = "table_name_label";
-            this.table_name_label.Size = new System.Drawing.Size(66, 13);
+            this.table_name_label.Size = new System.Drawing.Size(87, 17);
             this.table_name_label.TabIndex = 1;
             this.table_name_label.Text = "Table name:";
             // 
             // table_name_textbox
             // 
-            this.table_name_textbox.Location = new System.Drawing.Point(102, 17);
+            this.table_name_textbox.Location = new System.Drawing.Point(136, 21);
+            this.table_name_textbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.table_name_textbox.Name = "table_name_textbox";
-            this.table_name_textbox.Size = new System.Drawing.Size(307, 20);
+            this.table_name_textbox.Size = new System.Drawing.Size(408, 22);
             this.table_name_textbox.TabIndex = 2;
+            this.table_name_textbox.TextChanged += new System.EventHandler(this.table_name_textbox_TextChanged);
             // 
-            // button1
+            // btn_find_table
             // 
-            this.button1.Location = new System.Drawing.Point(430, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Create";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_find_table.Location = new System.Drawing.Point(573, 18);
+            this.btn_find_table.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_find_table.Name = "btn_find_table";
+            this.btn_find_table.Size = new System.Drawing.Size(100, 28);
+            this.btn_find_table.TabIndex = 4;
+            this.btn_find_table.Text = "Find";
+            this.btn_find_table.UseVisualStyleBackColor = true;
+            this.btn_find_table.Click += new System.EventHandler(this.btn_findTable_Click);
             // 
-            // dataGridView1
+            // dtgv_table
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 53);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(772, 385);
-            this.dataGridView1.TabIndex = 5;
+            this.dtgv_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgv_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_table.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.col_tabname,
+            this.col_id,
+            this.col_colname,
+            this.col_datatype,
+            this.col_nullable,
+            this.col_key});
+            this.dtgv_table.Location = new System.Drawing.Point(16, 65);
+            this.dtgv_table.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtgv_table.Name = "dtgv_table";
+            this.dtgv_table.RowHeadersWidth = 51;
+            this.dtgv_table.Size = new System.Drawing.Size(1029, 474);
+            this.dtgv_table.TabIndex = 5;
+            this.dtgv_table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_table_CellContentClick_1);
             // 
-            // Column1
+            // col_tabname
             // 
-            this.Column1.HeaderText = "Tên Bảng";
-            this.Column1.Name = "Column1";
+            this.col_tabname.HeaderText = "Table name";
+            this.col_tabname.MinimumWidth = 6;
+            this.col_tabname.Name = "col_tabname";
+            this.col_tabname.ReadOnly = true;
             // 
-            // Column2
+            // col_id
             // 
-            this.Column2.HeaderText = "Khóa chính";
-            this.Column2.Name = "Column2";
+            this.col_id.HeaderText = "Column ID";
+            this.col_id.MinimumWidth = 6;
+            this.col_id.Name = "col_id";
+            this.col_id.ReadOnly = true;
             // 
-            // Column3
+            // col_colname
             // 
-            this.Column3.HeaderText = "Data Type";
-            this.Column3.Name = "Column3";
+            this.col_colname.HeaderText = "Column name";
+            this.col_colname.MinimumWidth = 6;
+            this.col_colname.Name = "col_colname";
+            this.col_colname.ReadOnly = true;
             // 
-            // Column4
+            // col_datatype
             // 
-            this.Column4.HeaderText = "Size";
-            this.Column4.Name = "Column4";
+            this.col_datatype.HeaderText = "Data type";
+            this.col_datatype.MinimumWidth = 6;
+            this.col_datatype.Name = "col_datatype";
+            this.col_datatype.ReadOnly = true;
             // 
-            // Column5
+            // col_nullable
             // 
-            this.Column5.HeaderText = "NOT NULL";
-            this.Column5.Name = "Column5";
+            this.col_nullable.HeaderText = "Nullable";
+            this.col_nullable.MinimumWidth = 6;
+            this.col_nullable.Name = "col_nullable";
+            this.col_nullable.ReadOnly = true;
+            // 
+            // col_key
+            // 
+            this.col_key.HeaderText = "Primary key";
+            this.col_key.MinimumWidth = 6;
+            this.col_key.Name = "col_key";
+            this.col_key.ReadOnly = true;
             // 
             // TableManage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.dtgv_table);
+            this.Controls.Add(this.btn_find_table);
             this.Controls.Add(this.table_name_textbox);
             this.Controls.Add(this.table_name_label);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TableManage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TableManage";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,12 +155,13 @@
 
         private System.Windows.Forms.Label table_name_label;
         private System.Windows.Forms.TextBox table_name_textbox;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.Button btn_find_table;
+        private System.Windows.Forms.DataGridView dtgv_table;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_tabname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_colname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_datatype;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_nullable;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn col_key;
     }
 }
