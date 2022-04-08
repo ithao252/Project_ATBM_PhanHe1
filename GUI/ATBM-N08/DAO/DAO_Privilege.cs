@@ -25,10 +25,14 @@ namespace ATBM_N08.DAO
             }
         }
 
-/*        public void RevokePrivilege(String table_name)
+        public void GrantPrivilege(String user_role, String privs, bool admin_option)
         {
             OracleCommand command = new OracleCommand();
-            command.CommandText = $"DROP TABLE {table_name}";
+            command.CommandText = $"GRANT {privs} TO {user_role}";
+
+            if (admin_option == true)
+                command.CommandText += " WITH ADMIN OPTION";
+
             command.Connection = _conn;
 
             try
@@ -42,22 +46,17 @@ namespace ATBM_N08.DAO
                 _conn.Close();
                 throw new Exception(ex.Message);
             }
-
         }
-*/
-/*        public void CreateTable(String table_name)
+
+        public void RevokePrivilege(String user_role, String privs)
         {
             OracleCommand command = new OracleCommand();
-            command.CommandText = $"CREATE USER {username} IDENTIFIED BY {password}";
+            command.CommandText = $"REVOKE {privs} FROM {user_role}";
             command.Connection = _conn;
 
             try
             {
                 _conn.Open();
-                command.ExecuteNonQuery();
-                command.CommandText = $"GRANT CONNECT TO {username}";
-                command.ExecuteNonQuery();
-                command.CommandText = $"COMMIT";
                 command.ExecuteNonQuery();
                 _conn.Close();
             }
@@ -67,7 +66,8 @@ namespace ATBM_N08.DAO
                 throw new Exception(ex.Message);
             }
         }
-*/
+
+
         public DataTable GetAllPrivileges()
         {
             OracleCommand command = new OracleCommand();
@@ -138,7 +138,7 @@ namespace ATBM_N08.DAO
         {
             OracleCommand command = new OracleCommand();
             command.CommandText = "SELECT * FROM role_sys_privs " + 
-                                    $"WHERE role = '{role}';";
+                                    $"WHERE role = '{role}'";
             command.Connection = _conn;
 
             OracleDataAdapter adapter;
@@ -161,7 +161,7 @@ namespace ATBM_N08.DAO
         {
             OracleCommand command = new OracleCommand();
             command.CommandText = "SELECT * FROM user_sys_privs " +
-                                    $"WHERE username = '{username}';";
+                                    $"WHERE username = '{username}'";
             command.Connection = _conn;
 
             OracleDataAdapter adapter;

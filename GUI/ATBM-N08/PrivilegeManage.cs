@@ -22,7 +22,7 @@ namespace ATBM_N08
         {
             try
             {
-                dtgv_grant_privs.DataSource = BUS_Privilege.Instance.FindRolePrivileges(role_textbox.Text.ToString());
+                dtgv_privs.DataSource = BUS_Privilege.Instance.FindRolePrivileges(role_textbox.Text.ToString());
             }
             catch (Exception ex)
             {
@@ -34,23 +34,12 @@ namespace ATBM_N08
         {
             try
             {
-                dtgv_grant_privs.DataSource = BUS_Privilege.Instance.FindUserPrivileges(role_textbox.Text.ToString());
+                dtgv_privs.DataSource = BUS_Privilege.Instance.FindUserPrivileges(user_textbox.Text.ToString());
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-
-        private void btn_grant_privs_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_revoke_privs_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_findRole_Click(object sender, EventArgs e)
@@ -65,6 +54,29 @@ namespace ATBM_N08
             user_textbox.Text = "";
         }
 
+        private void btn_grantPrivs_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BUS_Privilege.Instance.GrantPrivilege(grant_to_textbox.Text.ToString(), grant_privs_textbox.Text.ToString(), admin_option.Checked);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btn_revokePrivs_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BUS_Privilege.Instance.RevokePrivilege(revoke_from_textbox.Text.ToString(), revoke_privs_textbox.Text.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         private void role_textbox_TextChanged(object sender, EventArgs e)
         {
@@ -76,5 +88,29 @@ namespace ATBM_N08
 
         }
 
+        private void grantTo_textbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grantPrivs_textbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void admin_option_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void revokeFrom_textbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void revokePrivs_textbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
