@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtgv_ListUser = new System.Windows.Forms.DataGridView();
+            this.dtgv_Role = new System.Windows.Forms.DataGridView();
             this.btn_createRole = new System.Windows.Forms.Button();
             this.btn_updateRole = new System.Windows.Forms.Button();
             this.btn_deleteRole = new System.Windows.Forms.Button();
             this.btn_grant_revokeRole = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ListUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_Role)).BeginInit();
             this.SuspendLayout();
             // 
-            // dtgv_ListUser
+            // dtgv_Role
             // 
-            this.dtgv_ListUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_ListUser.Location = new System.Drawing.Point(4, 71);
-            this.dtgv_ListUser.Margin = new System.Windows.Forms.Padding(6);
-            this.dtgv_ListUser.Name = "dtgv_ListUser";
-            this.dtgv_ListUser.RowHeadersWidth = 82;
-            this.dtgv_ListUser.Size = new System.Drawing.Size(1420, 723);
-            this.dtgv_ListUser.TabIndex = 7;
-            this.dtgv_ListUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_ListUser_CellContentClick);
+            this.dtgv_Role.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_Role.Location = new System.Drawing.Point(4, 71);
+            this.dtgv_Role.Margin = new System.Windows.Forms.Padding(6);
+            this.dtgv_Role.Name = "dtgv_Role";
+            this.dtgv_Role.RowHeadersWidth = 82;
+            this.dtgv_Role.Size = new System.Drawing.Size(1420, 723);
+            this.dtgv_Role.TabIndex = 7;
+            this.dtgv_Role.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_Role_CellContentClick);
             // 
             // btn_createRole
             // 
@@ -121,19 +121,20 @@
             this.Controls.Add(this.btn_deleteRole);
             this.Controls.Add(this.btn_updateRole);
             this.Controls.Add(this.btn_createRole);
-            this.Controls.Add(this.dtgv_ListUser);
+            this.Controls.Add(this.dtgv_Role);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ListRole";
             this.Text = "ds";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgv_ListUser)).EndInit();
+            this.Load += new System.EventHandler(this.ListRole_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_Role)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtgv_ListUser;
+        private System.Windows.Forms.DataGridView dtgv_Role;
         private System.Windows.Forms.Button btn_createRole;
         private System.Windows.Forms.Button btn_updateRole;
         private System.Windows.Forms.Button btn_deleteRole;

@@ -81,5 +81,10 @@ namespace ATBM_N08
             UpdateUserInfo u = new UpdateUserInfo();
             u.Show();
         }
+
+        private void dtgv_User_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

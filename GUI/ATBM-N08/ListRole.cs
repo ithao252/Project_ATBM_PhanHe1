@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ATBM_N08.BUS;
 
 namespace ATBM_N08
 {
@@ -15,11 +16,6 @@ namespace ATBM_N08
         public ListRole()
         {
             InitializeComponent();
-        }
-
-        private void dtgv_ListUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void btn_createRole_Click(object sender, EventArgs e)
@@ -45,5 +41,33 @@ namespace ATBM_N08
             GrantRevokeRole g = new GrantRevokeRole();
             g.Show();
         }
+
+        private void ListRole_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                dtgv_Role.DataSource = BUS_Role.Instance.GetAllRoles();
+                //DataGridViewButtonColumn deleteUserButtonCol = new DataGridViewButtonColumn();
+                //deleteUserButtonCol.Name = "Delete";
+                //deleteUserButtonCol.HeaderText = "";
+                //deleteUserButtonCol.Text = "Xóa";
+                //deleteUserButtonCol.UseColumnTextForButtonValue = true;
+
+                //if (dtgv_User.Columns["Delete"] == null)
+                //{
+                //    dtgv_User.Columns.Add(deleteUserButtonCol);
+                //}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dtgv_Role_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     }
 }
