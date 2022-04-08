@@ -75,6 +75,7 @@ namespace ATBM_N08.BUS
             {
                 DTO_DetailTable tmpObject = new DTO_DetailTable();
 
+                tmpObject.Owner_table = row["OWNER"].ToString();
                 tmpObject.Table_name = row["TABLE_NAME"].ToString();
                 tmpObject.Column_ID = row["COLUMN_ID"].ToString();
                 tmpObject.Column_name = row["COLUMN_NAME"].ToString();

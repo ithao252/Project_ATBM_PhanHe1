@@ -117,7 +117,7 @@ namespace ATBM_N08.DAO
         public DataTable GetDetailTable(String table_name)
         {
             OracleCommand command = new OracleCommand();
-            command.CommandText = "SELECT * FROM user_tab_columns " +
+            command.CommandText = "SELECT * FROM all_tab_columns " +
                                     $"WHERE table_name = '{table_name}'";
             command.Connection = _conn;
 
