@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ATBM_N08.BUS;
 
 namespace ATBM_N08
 {
@@ -16,15 +17,23 @@ namespace ATBM_N08
         {
             InitializeComponent();
         }
-        private void btn_findTable_Click(object sender, EventArgs e)
+
+        private void TableManage_Load(object sender, EventArgs e)
         {
-            dtgv_table.Rows.Insert(dtgv_table.Rows.Count-1, table_name_textbox.Text.ToString(), "a");
-            table_name_textbox.Text = "";
+            try
+            {
+                dtgv_table.DataSource = BUS_Table.Instance.GetDetailTable(table_name_textbox.Text.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
-        private void dtgv_table_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        private void btn_findTable_Click(object sender, EventArgs e)
         {
-
+            this.TableManage_Load(sender, e);
+            table_name_textbox.Text = "";
         }
 
         private void table_name_textbox_TextChanged(object sender, EventArgs e)

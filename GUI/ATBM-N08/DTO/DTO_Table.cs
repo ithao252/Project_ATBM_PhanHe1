@@ -12,6 +12,5 @@ namespace ATBM_N08.DTO
         public String Owner { get; set; }
         public String Table_name { get; set; }
         public String Tablespace_name { get; set; }
-
     }
 }

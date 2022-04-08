@@ -119,6 +119,7 @@
       <DependentUpon>deleteRole.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO\DTO_Privilege.cs" />
+    <Compile Include="DTO\DTO_DetailTable.cs" />
     <Compile Include="DTO\DTO_Table.cs" />
     <Compile Include="DTO\DTO_User.cs" />
     <Compile Include="AddTable.Designer.cs">

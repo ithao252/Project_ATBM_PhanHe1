@@ -89,6 +89,53 @@ namespace ATBM_N08.DAO
 
             return dataTable;
         }
+
+        public DataTable GetOwnerTables(String owner_table)
+        {
+            OracleCommand command = new OracleCommand();
+            command.CommandText = "SELECT * FROM all_tables " +
+                                    $"WHERE owner = '{owner_table}'";
+            command.Connection = _conn;
+
+            OracleDataAdapter adapter;
+            DataTable dataTable;
+            try
+            {
+                adapter = new OracleDataAdapter(command);
+                dataTable = new DataTable(); //create a new table
+                adapter.Fill(dataTable);
+            }
+            catch (OracleException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+            return dataTable;
+        }
+
+
+        public DataTable GetDetailTable(String table_name)
+        {
+            OracleCommand command = new OracleCommand();
+            command.CommandText = "SELECT * FROM user_tab_columns " +
+                                    $"WHERE table_name = '{table_name}'";
+            command.Connection = _conn;
+
+            OracleDataAdapter adapter;
+            DataTable dataTable;
+            try
+            {
+                adapter = new OracleDataAdapter(command);
+                dataTable = new DataTable(); //create a new table
+                adapter.Fill(dataTable);
+            }
+            catch (OracleException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+            return dataTable;
+        }
     }
 
 }
