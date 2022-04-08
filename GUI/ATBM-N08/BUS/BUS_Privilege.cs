@@ -34,6 +34,24 @@ namespace ATBM_N08.BUS
             {
                 DTO_Privilege tmpObject = new DTO_Privilege();
 
+                tmpObject.Privilege = row["PRIVILEGE"].ToString();
+
+                result.Add(tmpObject);
+            }
+
+            return result;
+        }
+
+        public List<DTO_PrivilegeRole> GetRolePrivileges()
+        {
+            //Get all data from DAO Layer
+            List<DTO_PrivilegeRole> result = new List<DTO_PrivilegeRole>();
+            DataTable data = DAO_Privilege.Instance.GetRolePrivileges();
+
+            foreach (DataRow row in data.Rows)
+            {
+                DTO_PrivilegeRole tmpObject = new DTO_PrivilegeRole();
+
                 tmpObject.Role = row["ROLE"].ToString();
                 tmpObject.Privilege = row["PRIVILEGE"].ToString();
                 tmpObject.Admin_option = row["ADMIN_OPTION"].ToString();
@@ -46,30 +64,96 @@ namespace ATBM_N08.BUS
             return result;
         }
 
+        public List<DTO_PrivilegeUser> GetUserPrivileges()
+        {
+            //Get all data from DAO Layer
+            List<DTO_PrivilegeUser> result = new List<DTO_PrivilegeUser>();
+            DataTable data = DAO_Privilege.Instance.GetUserPrivileges();
 
-/*        public void DeleteTable(String table_name)
-        {
-            try
+            foreach (DataRow row in data.Rows)
             {
-                DAO_Table.Instance.DeleteTable(table_name);
+                DTO_PrivilegeUser tmpObject = new DTO_PrivilegeUser();
+
+                tmpObject.Username = row["USERNAME"].ToString();
+                tmpObject.Privilege = row["PRIVILEGE"].ToString();
+                tmpObject.Admin_option = row["ADMIN_OPTION"].ToString();
+                tmpObject.Common = row["COMMON"].ToString();
+                tmpObject.Inherited = row["INHERITED"].ToString();
+
+                result.Add(tmpObject);
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+
+            return result;
         }
-*/
-/*        public void CreateUser(String table_name)
+
+        public List<DTO_PrivilegeRole> FindRolePrivileges(String role)
         {
-            try
+            //Get all data from DAO Layer
+            List<DTO_PrivilegeRole> result = new List<DTO_PrivilegeRole>();
+            DataTable data = DAO_Privilege.Instance.FindRolePrivileges(role);
+
+            foreach (DataRow row in data.Rows)
             {
-                DAO_User.Instance.CreateUser(username, password);
+                DTO_PrivilegeRole tmpObject = new DTO_PrivilegeRole();
+
+                tmpObject.Role = row["ROLE"].ToString();
+                tmpObject.Privilege = row["PRIVILEGE"].ToString();
+                tmpObject.Admin_option = row["ADMIN_OPTION"].ToString();
+                tmpObject.Common = row["COMMON"].ToString();
+                tmpObject.Inherited = row["INHERITED"].ToString();
+
+                result.Add(tmpObject);
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+
+            return result;
         }
-*/
+
+        public List<DTO_PrivilegeUser> FindUserPrivileges(String username)
+        {
+            //Get all data from DAO Layer
+            List<DTO_PrivilegeUser> result = new List<DTO_PrivilegeUser>();
+            DataTable data = DAO_Privilege.Instance.FindUserPrivileges(username);
+
+            foreach (DataRow row in data.Rows)
+            {
+                DTO_PrivilegeUser tmpObject = new DTO_PrivilegeUser();
+
+                tmpObject.Username = row["USERNAME"].ToString();
+                tmpObject.Privilege = row["PRIVILEGE"].ToString();
+                tmpObject.Admin_option = row["ADMIN_OPTION"].ToString();
+                tmpObject.Common = row["COMMON"].ToString();
+                tmpObject.Inherited = row["INHERITED"].ToString();
+
+                result.Add(tmpObject);
+            }
+
+            return result;
+        }
+
+
+        /*        public void DeleteTable(String table_name)
+                {
+                    try
+                    {
+                        DAO_Table.Instance.DeleteTable(table_name);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception(ex.Message);
+                    }
+                }
+        */
+        /*        public void CreateUser(String table_name)
+                {
+                    try
+                    {
+                        DAO_User.Instance.CreateUser(username, password);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception(ex.Message);
+                    }
+                }
+        */
     }
 }

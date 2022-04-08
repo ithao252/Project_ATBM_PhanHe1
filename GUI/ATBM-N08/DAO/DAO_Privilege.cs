@@ -71,7 +71,7 @@ namespace ATBM_N08.DAO
         public DataTable GetAllPrivileges()
         {
             OracleCommand command = new OracleCommand();
-            command.CommandText = "SELECT * FROM role_sys_privs ORDER BY ROLE ASC";
+            command.CommandText = "SELECT * FROM session_privs ORDER BY privilege";
             command.Connection = _conn;
 
             OracleDataAdapter adapter;
@@ -89,6 +89,97 @@ namespace ATBM_N08.DAO
 
             return dataTable;
         }
+
+        public DataTable GetRolePrivileges()
+        {
+            OracleCommand command = new OracleCommand();
+            command.CommandText = "SELECT * FROM role_sys_privs ORDER BY role";
+            command.Connection = _conn;
+
+            OracleDataAdapter adapter;
+            DataTable dataTable;
+            try
+            {
+                adapter = new OracleDataAdapter(command);
+                dataTable = new DataTable(); //create a new table
+                adapter.Fill(dataTable);
+            }
+            catch (OracleException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+            return dataTable;
+        }
+
+        public DataTable GetUserPrivileges()
+        {
+            OracleCommand command = new OracleCommand();
+            command.CommandText = "SELECT * FROM user_sys_privs ORDER BY username";
+            command.Connection = _conn;
+
+            OracleDataAdapter adapter;
+            DataTable dataTable;
+            try
+            {
+                adapter = new OracleDataAdapter(command);
+                dataTable = new DataTable(); //create a new table
+                adapter.Fill(dataTable);
+            }
+            catch (OracleException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+            return dataTable;
+        }
+
+        public DataTable FindRolePrivileges(String role)
+        {
+            OracleCommand command = new OracleCommand();
+            command.CommandText = "SELECT * FROM role_sys_privs " + 
+                                    $"WHERE role = '{role}';";
+            command.Connection = _conn;
+
+            OracleDataAdapter adapter;
+            DataTable dataTable;
+            try
+            {
+                adapter = new OracleDataAdapter(command);
+                dataTable = new DataTable(); //create a new table
+                adapter.Fill(dataTable);
+            }
+            catch (OracleException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+            return dataTable;
+        }
+
+        public DataTable FindUserPrivileges(String username)
+        {
+            OracleCommand command = new OracleCommand();
+            command.CommandText = "SELECT * FROM user_sys_privs " +
+                                    $"WHERE username = '{username}';";
+            command.Connection = _conn;
+
+            OracleDataAdapter adapter;
+            DataTable dataTable;
+            try
+            {
+                adapter = new OracleDataAdapter(command);
+                dataTable = new DataTable(); //create a new table
+                adapter.Fill(dataTable);
+            }
+            catch (OracleException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+            return dataTable;
+        }
+
     }
 
 }

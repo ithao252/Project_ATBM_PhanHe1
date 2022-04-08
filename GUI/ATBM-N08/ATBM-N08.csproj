@@ -120,6 +120,8 @@
     <Compile Include="deleteRole.Designer.cs">
       <DependentUpon>deleteRole.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\DTO_PrivilegeUser.cs" />
+    <Compile Include="DTO\DTO_PrivilegeRole.cs" />
     <Compile Include="DTO\DTO_Privilege.cs" />
     <Compile Include="DTO\DTO_DetailTable.cs" />
     <Compile Include="DTO\DTO_Table.cs" />
@@ -128,7 +130,6 @@
     <Compile Include="AddTable.Designer.cs">
       <DependentUpon>AddTable.cs</DependentUpon>
     </Compile>
-
     <Compile Include="fAddUser.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -35,5 +35,41 @@ namespace ATBM_N08
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void ListPrivsRole_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                dtgv_Privilege.DataSource = BUS_Privilege.Instance.GetRolePrivileges();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void ListPrivsUser_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                dtgv_Privilege.DataSource = BUS_Privilege.Instance.GetUserPrivileges();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btn_rolePrivilege_Click(object sender, EventArgs e)
+        {
+            this.ListPrivsRole_Load(sender, e);
+        }
+
+        private void btn_userPrivilege_Click(object sender, EventArgs e)
+        {
+            this.ListPrivsUser_Load(sender, e);
+        }
+
+
     }
 }
