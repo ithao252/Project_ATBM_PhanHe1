@@ -37,21 +37,25 @@
             // dtgv_User
             // 
             this.dtgv_User.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_User.Location = new System.Drawing.Point(0, 34);
+            this.dtgv_User.Location = new System.Drawing.Point(0, 65);
+            this.dtgv_User.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dtgv_User.Name = "dtgv_User";
-            this.dtgv_User.Size = new System.Drawing.Size(712, 378);
+            this.dtgv_User.RowHeadersWidth = 82;
+            this.dtgv_User.Size = new System.Drawing.Size(1424, 727);
             this.dtgv_User.TabIndex = 0;
+            this.dtgv_User.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_User_CellContentClick);
             // 
             // btn_add
             // 
             this.btn_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.btn_add.FlatAppearance.BorderSize = 0;
             this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_add.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add.ForeColor = System.Drawing.Color.White;
-            this.btn_add.Location = new System.Drawing.Point(431, 2);
+            this.btn_add.Location = new System.Drawing.Point(862, 4);
+            this.btn_add.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(152, 26);
+            this.btn_add.Size = new System.Drawing.Size(304, 50);
             this.btn_add.TabIndex = 9;
             this.btn_add.Text = "CREATE NEW USER";
             this.btn_add.UseVisualStyleBackColor = false;
@@ -62,11 +66,12 @@
             this.btn_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.btn_Update.FlatAppearance.BorderSize = 0;
             this.btn_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Update.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Update.ForeColor = System.Drawing.Color.White;
-            this.btn_Update.Location = new System.Drawing.Point(23, 2);
+            this.btn_Update.Location = new System.Drawing.Point(46, 4);
+            this.btn_Update.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Size = new System.Drawing.Size(381, 26);
+            this.btn_Update.Size = new System.Drawing.Size(762, 50);
             this.btn_Update.TabIndex = 10;
             this.btn_Update.Text = "CHECK INFORMATION OF USER AND UPDATE";
             this.btn_Update.UseVisualStyleBackColor = false;
@@ -74,13 +79,14 @@
             // 
             // fListUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(716, 417);
+            this.ClientSize = new System.Drawing.Size(1432, 802);
             this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.dtgv_User);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "fListUser";
             this.Text = "fListUser";
             this.Load += new System.EventHandler(this.fListUser_Load);
