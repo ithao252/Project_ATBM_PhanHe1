@@ -64,6 +64,8 @@ namespace ATBM_N08
             {
                 MessageBox.Show(ex.Message);
             }
+            grant_to_textbox.Text = "";
+            grant_privs_textbox.Text = "";
         }
 
         private void btn_revokePrivs_Click(object sender, EventArgs e)
@@ -76,6 +78,8 @@ namespace ATBM_N08
             {
                 MessageBox.Show(ex.Message);
             }
+            revoke_from_textbox.Text = "";
+            revoke_privs_textbox.Text = "";
         }
 
         private void role_textbox_TextChanged(object sender, EventArgs e)
