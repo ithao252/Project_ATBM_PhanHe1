@@ -94,6 +94,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BUS\BUS_Privilege.cs" />
+    <Compile Include="BUS\BUS_Views.cs" />
     <Compile Include="BUS\BUS_Table.cs" />
     <Compile Include="BUS\BUS_Role.cs" />
     <Compile Include="BUS\BUS_User.cs" />
@@ -110,6 +111,7 @@
       <DependentUpon>createRole.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\DAO_Privilege.cs" />
+    <Compile Include="DAO\DAO_Views.cs" />
     <Compile Include="DAO\DAO_Table.cs" />
     <Compile Include="DAO\DAO_Role.cs" />
     <Compile Include="DAO\DAO_User.cs" />
@@ -125,6 +127,7 @@
     <Compile Include="DTO\DTO_Privilege.cs" />
     <Compile Include="DTO\DTO_DetailTable.cs" />
     <Compile Include="DTO\DTO_RoleUser.cs" />
+    <Compile Include="DTO\DTO_Views.cs" />
     <Compile Include="DTO\DTO_Table.cs" />
     <Compile Include="DTO\DTO_Role.cs" />
     <Compile Include="DTO\DTO_User.cs" />
@@ -142,6 +145,12 @@
     </Compile>
     <Compile Include="ListPrivilege.Designer.cs">
       <DependentUpon>ListPrivilege.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListViews.Designer.cs">
+      <DependentUpon>ListViews.cs</DependentUpon>
     </Compile>
     <Compile Include="ListTable.cs">
       <SubType>Form</SubType>
@@ -228,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListPrivilege.resx">
       <DependentUpon>ListPrivilege.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListViews.resx">
+      <DependentUpon>ListViews.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListTable.resx">
       <DependentUpon>ListTable.cs</DependentUpon>

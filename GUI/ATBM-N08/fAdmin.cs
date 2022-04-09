@@ -83,5 +83,17 @@ namespace ATBM_N08
         {
 
         }
+
+        private void btn_Views_Click(object sender, EventArgs e)
+        {
+            SlidePanel.Height = btn_Table.Height;
+            SlidePanel.Top = btn_Table.Top;
+            loadform(new ListViews());
+        }
+
+        private void SlidePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
