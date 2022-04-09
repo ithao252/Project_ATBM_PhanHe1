@@ -130,30 +130,28 @@ namespace ATBM_N08.BUS
             return result;
         }
 
+        public void GrantPrivilege(String user_role, String privs, bool admin_option)
+        {
+            try
+            {
+                DAO_Privilege.Instance.GrantPrivilege(user_role, privs, admin_option);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
 
-        /*        public void DeleteTable(String table_name)
-                {
-                    try
-                    {
-                        DAO_Table.Instance.DeleteTable(table_name);
-                    }
-                    catch (Exception ex)
-                    {
-                        throw new Exception(ex.Message);
-                    }
-                }
-        */
-        /*        public void CreateUser(String table_name)
-                {
-                    try
-                    {
-                        DAO_User.Instance.CreateUser(username, password);
-                    }
-                    catch (Exception ex)
-                    {
-                        throw new Exception(ex.Message);
-                    }
-                }
-        */
+        public void RevokePrivilege(String user_role, String privs)
+        {
+            try
+            {
+                DAO_Privilege.Instance.RevokePrivilege(user_role, privs);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }
