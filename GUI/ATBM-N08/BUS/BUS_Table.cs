@@ -100,17 +100,17 @@ namespace ATBM_N08.BUS
             }
         }
 
-/*        public void CreateUser(String table_name)
+        public void CreateTable(String query_create_table)
         {
             try
             {
-                DAO_User.Instance.CreateUser(username, password);
+                DAO_Table.Instance.CreateTable(query_create_table);
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
         }
-*/
+
     }
 }

@@ -40,11 +40,11 @@
             // dtgv_Table
             // 
             this.dtgv_Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_Table.Location = new System.Drawing.Point(0, 65);
-            this.dtgv_Table.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dtgv_Table.Location = new System.Drawing.Point(0, 42);
+            this.dtgv_Table.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtgv_Table.Name = "dtgv_Table";
             this.dtgv_Table.RowHeadersWidth = 82;
-            this.dtgv_Table.Size = new System.Drawing.Size(1424, 727);
+            this.dtgv_Table.Size = new System.Drawing.Size(949, 465);
             this.dtgv_Table.TabIndex = 0;
             // 
             // btn_add_table
@@ -54,10 +54,10 @@
             this.btn_add_table.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_add_table.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add_table.ForeColor = System.Drawing.Color.White;
-            this.btn_add_table.Location = new System.Drawing.Point(20, 10);
-            this.btn_add_table.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btn_add_table.Location = new System.Drawing.Point(13, 6);
+            this.btn_add_table.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_add_table.Name = "btn_add_table";
-            this.btn_add_table.Size = new System.Drawing.Size(240, 50);
+            this.btn_add_table.Size = new System.Drawing.Size(160, 32);
             this.btn_add_table.TabIndex = 5;
             this.btn_add_table.Text = "CREATE TABLE";
             this.btn_add_table.UseVisualStyleBackColor = false;
@@ -70,10 +70,10 @@
             this.btn_detail_table.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_detail_table.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_detail_table.ForeColor = System.Drawing.Color.White;
-            this.btn_detail_table.Location = new System.Drawing.Point(280, 10);
-            this.btn_detail_table.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btn_detail_table.Location = new System.Drawing.Point(187, 6);
+            this.btn_detail_table.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_detail_table.Name = "btn_detail_table";
-            this.btn_detail_table.Size = new System.Drawing.Size(430, 50);
+            this.btn_detail_table.Size = new System.Drawing.Size(287, 32);
             this.btn_detail_table.TabIndex = 5;
             this.btn_detail_table.Text = "VIEW DETAILS OF TABLE";
             this.btn_detail_table.UseVisualStyleBackColor = false;
@@ -82,28 +82,29 @@
             // table_owner_label
             // 
             this.table_owner_label.AutoSize = true;
-            this.table_owner_label.Location = new System.Drawing.Point(760, 19);
-            this.table_owner_label.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.table_owner_label.Location = new System.Drawing.Point(507, 12);
+            this.table_owner_label.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.table_owner_label.Name = "table_owner_label";
-            this.table_owner_label.Size = new System.Drawing.Size(136, 25);
+            this.table_owner_label.Size = new System.Drawing.Size(90, 17);
             this.table_owner_label.TabIndex = 1;
             this.table_owner_label.Text = "Table owner:";
+            this.table_owner_label.Click += new System.EventHandler(this.table_owner_label_Click);
             // 
             // table_owner_textbox
             // 
-            this.table_owner_textbox.Location = new System.Drawing.Point(900, 19);
-            this.table_owner_textbox.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.table_owner_textbox.Location = new System.Drawing.Point(600, 12);
+            this.table_owner_textbox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.table_owner_textbox.Name = "table_owner_textbox";
-            this.table_owner_textbox.Size = new System.Drawing.Size(396, 31);
+            this.table_owner_textbox.Size = new System.Drawing.Size(265, 22);
             this.table_owner_textbox.TabIndex = 2;
             this.table_owner_textbox.TextChanged += new System.EventHandler(this.table_owner_textbox_TextChanged);
             // 
             // btn_find_tableOwner
             // 
-            this.btn_find_tableOwner.Location = new System.Drawing.Point(1300, 10);
-            this.btn_find_tableOwner.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btn_find_tableOwner.Location = new System.Drawing.Point(867, 6);
+            this.btn_find_tableOwner.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_find_tableOwner.Name = "btn_find_tableOwner";
-            this.btn_find_tableOwner.Size = new System.Drawing.Size(100, 54);
+            this.btn_find_tableOwner.Size = new System.Drawing.Size(67, 35);
             this.btn_find_tableOwner.TabIndex = 4;
             this.btn_find_tableOwner.Text = "Find";
             this.btn_find_tableOwner.UseVisualStyleBackColor = true;
@@ -111,9 +112,9 @@
             // 
             // ListTable
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1432, 802);
+            this.ClientSize = new System.Drawing.Size(955, 513);
             this.Controls.Add(this.btn_add_table);
             this.Controls.Add(this.btn_detail_table);
             this.Controls.Add(this.dtgv_Table);
@@ -121,7 +122,7 @@
             this.Controls.Add(this.table_owner_textbox);
             this.Controls.Add(this.table_owner_label);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ListTable";
             this.Text = "ListTable";
             this.Load += new System.EventHandler(this.ListTable_Load);

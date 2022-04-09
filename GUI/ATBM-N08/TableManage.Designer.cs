@@ -31,6 +31,7 @@
             this.table_name_label = new System.Windows.Forms.Label();
             this.table_name_textbox = new System.Windows.Forms.TextBox();
             this.btn_find_table = new System.Windows.Forms.Button();
+            this.btn_drop_table = new System.Windows.Forms.Button();
             this.dtgv_table = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_table)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +66,17 @@
             this.btn_find_table.UseVisualStyleBackColor = true;
             this.btn_find_table.Click += new System.EventHandler(this.btn_findTable_Click);
             // 
+            // btn_drop_table
+            // 
+            this.btn_drop_table.Location = new System.Drawing.Point(820, 18);
+            this.btn_drop_table.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_drop_table.Name = "btn_drop_table";
+            this.btn_drop_table.Size = new System.Drawing.Size(200, 28);
+            this.btn_drop_table.TabIndex = 4;
+            this.btn_drop_table.Text = "DROP THIS TABLE";
+            this.btn_drop_table.UseVisualStyleBackColor = true;
+            this.btn_drop_table.Click += new System.EventHandler(this.btn_dropTable_Click);
+            // 
             // dtgv_table
             // 
             this.dtgv_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -80,6 +92,7 @@
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.dtgv_table);
             this.Controls.Add(this.btn_find_table);
+            this.Controls.Add(this.btn_drop_table);
             this.Controls.Add(this.table_name_textbox);
             this.Controls.Add(this.table_name_label);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -97,6 +110,7 @@
         private System.Windows.Forms.Label table_name_label;
         private System.Windows.Forms.TextBox table_name_textbox;
         private System.Windows.Forms.Button btn_find_table;
+        private System.Windows.Forms.Button btn_drop_table;
         private System.Windows.Forms.DataGridView dtgv_table;
     }
 }

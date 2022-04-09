@@ -64,5 +64,10 @@ namespace ATBM_N08
             this.ListTableOwner_Load(sender, e);
             table_owner_textbox.Text = "";
         }
+
+        private void table_owner_label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

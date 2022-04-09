@@ -29,12 +29,28 @@ namespace ATBM_N08
                 MessageBox.Show(ex.Message);
             }
         }
+        private void DropTable_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                BUS_Table.Instance.DeleteTable(table_name_textbox.Text.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         private void btn_findTable_Click(object sender, EventArgs e)
         {
             this.TableManage_Load(sender, e);
+        }
+        private void btn_dropTable_Click(object sender, EventArgs e)
+        {
+            this.DropTable_Load(sender, e);
             table_name_textbox.Text = "";
         }
+
 
         private void table_name_textbox_TextChanged(object sender, EventArgs e)
         {

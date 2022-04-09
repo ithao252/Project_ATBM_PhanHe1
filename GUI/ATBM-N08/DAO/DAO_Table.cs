@@ -45,19 +45,15 @@ namespace ATBM_N08.DAO
 
         }
 
-/*        public void CreateTable(String table_name)
+        public void CreateTable(String query_create_table)
         {
             OracleCommand command = new OracleCommand();
-            command.CommandText = $"CREATE USER {username} IDENTIFIED BY {password}";
+            command.CommandText = query_create_table;
             command.Connection = _conn;
 
             try
             {
                 _conn.Open();
-                command.ExecuteNonQuery();
-                command.CommandText = $"GRANT CONNECT TO {username}";
-                command.ExecuteNonQuery();
-                command.CommandText = $"COMMIT";
                 command.ExecuteNonQuery();
                 _conn.Close();
             }
@@ -67,7 +63,7 @@ namespace ATBM_N08.DAO
                 throw new Exception(ex.Message);
             }
         }
-*/
+
         public DataTable GetAllTables()
         {
             OracleCommand command = new OracleCommand();
