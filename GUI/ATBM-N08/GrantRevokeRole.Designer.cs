@@ -28,58 +28,97 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgv_RoleUser = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.grant = new System.Windows.Forms.Label();
+            this.commitGrant = new System.Windows.Forms.Button();
+            this.tbRole1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.tbUser1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.commitRevoke = new System.Windows.Forms.Button();
+            this.tbRole2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbUser2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btn_reload = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_RoleUser)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // dtgv_RoleUser
             // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(385, 44);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Grant Role to User";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(458, 23);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.Size = new System.Drawing.Size(1118, 819);
-            this.dataGridView1.TabIndex = 3;
+            this.dtgv_RoleUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_RoleUser.Location = new System.Drawing.Point(458, 23);
+            this.dtgv_RoleUser.Margin = new System.Windows.Forms.Padding(6);
+            this.dtgv_RoleUser.Name = "dtgv_RoleUser";
+            this.dtgv_RoleUser.RowHeadersWidth = 82;
+            this.dtgv_RoleUser.Size = new System.Drawing.Size(1118, 819);
+            this.dtgv_RoleUser.TabIndex = 3;
+            this.dtgv_RoleUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_RoleUser_CellContentClick);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.grant);
+            this.panel1.Controls.Add(this.commitGrant);
+            this.panel1.Controls.Add(this.tbRole1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.tbUser1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(33, 125);
+            this.panel1.Location = new System.Drawing.Point(35, 74);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(385, 267);
             this.panel1.TabIndex = 4;
+            // 
+            // grant
+            // 
+            this.grant.BackColor = System.Drawing.SystemColors.Desktop;
+            this.grant.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.grant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.grant.Location = new System.Drawing.Point(0, 0);
+            this.grant.Name = "grant";
+            this.grant.Size = new System.Drawing.Size(385, 46);
+            this.grant.TabIndex = 7;
+            this.grant.Text = "Grant Role to User";
+            this.grant.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.grant.Click += new System.EventHandler(this.grant_Click);
+            // 
+            // commitGrant
+            // 
+            this.commitGrant.Location = new System.Drawing.Point(118, 199);
+            this.commitGrant.Name = "commitGrant";
+            this.commitGrant.Size = new System.Drawing.Size(131, 45);
+            this.commitGrant.TabIndex = 6;
+            this.commitGrant.Text = "COMMIT";
+            this.commitGrant.UseVisualStyleBackColor = true;
+            this.commitGrant.Click += new System.EventHandler(this.commitGrant_Click);
+            // 
+            // tbRole1
+            // 
+            this.tbRole1.Location = new System.Drawing.Point(118, 132);
+            this.tbRole1.Name = "tbRole1";
+            this.tbRole1.Size = new System.Drawing.Size(240, 31);
+            this.tbRole1.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(26, 135);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Role:";
+            // 
+            // tbUser1
+            // 
+            this.tbUser1.Location = new System.Drawing.Point(118, 78);
+            this.tbUser1.Name = "tbUser1";
+            this.tbUser1.Size = new System.Drawing.Size(240, 31);
+            this.tbUser1.TabIndex = 3;
             // 
             // label1
             // 
@@ -91,67 +130,49 @@
             this.label1.Text = "User:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(118, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(240, 31);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(118, 132);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(240, 31);
-            this.textBox2.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 135);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 25);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Role:";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(118, 199);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(131, 45);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "COMMIT";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.commitRevoke);
+            this.panel2.Controls.Add(this.tbRole2);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.tbUser2);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Location = new System.Drawing.Point(33, 473);
+            this.panel2.Location = new System.Drawing.Point(35, 422);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(385, 267);
             this.panel2.TabIndex = 5;
             // 
-            // button2
+            // label5
             // 
-            this.button2.Location = new System.Drawing.Point(118, 199);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 45);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "COMMIT";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label5.BackColor = System.Drawing.SystemColors.Desktop;
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(385, 46);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Revoke Role from User";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox3
+            // commitRevoke
             // 
-            this.textBox3.Location = new System.Drawing.Point(118, 132);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(240, 31);
-            this.textBox3.TabIndex = 5;
+            this.commitRevoke.Location = new System.Drawing.Point(118, 199);
+            this.commitRevoke.Name = "commitRevoke";
+            this.commitRevoke.Size = new System.Drawing.Size(131, 45);
+            this.commitRevoke.TabIndex = 6;
+            this.commitRevoke.Text = "COMMIT";
+            this.commitRevoke.UseVisualStyleBackColor = true;
+            this.commitRevoke.Click += new System.EventHandler(this.commitRevoke_Click);
+            // 
+            // tbRole2
+            // 
+            this.tbRole2.Location = new System.Drawing.Point(118, 132);
+            this.tbRole2.Name = "tbRole2";
+            this.tbRole2.Size = new System.Drawing.Size(240, 31);
+            this.tbRole2.TabIndex = 5;
             // 
             // label3
             // 
@@ -162,12 +183,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Role:";
             // 
-            // textBox4
+            // tbUser2
             // 
-            this.textBox4.Location = new System.Drawing.Point(118, 78);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(240, 31);
-            this.textBox4.TabIndex = 3;
+            this.tbUser2.Location = new System.Drawing.Point(118, 78);
+            this.tbUser2.Name = "tbUser2";
+            this.tbUser2.Size = new System.Drawing.Size(240, 31);
+            this.tbUser2.TabIndex = 3;
             // 
             // label4
             // 
@@ -178,30 +199,33 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "User:";
             // 
-            // button4
+            // btn_reload
             // 
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Margin = new System.Windows.Forms.Padding(6);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(385, 44);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Revoke Role to User";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_reload.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_reload.ForeColor = System.Drawing.Color.Snow;
+            this.btn_reload.Location = new System.Drawing.Point(289, 767);
+            this.btn_reload.Name = "btn_reload";
+            this.btn_reload.Size = new System.Drawing.Size(131, 43);
+            this.btn_reload.TabIndex = 6;
+            this.btn_reload.Text = "Reload";
+            this.btn_reload.UseVisualStyleBackColor = false;
+            this.btn_reload.Click += new System.EventHandler(this.btn_Reload_Click);
             // 
             // GrantRevokeRole
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.ClientSize = new System.Drawing.Size(1600, 866);
+            this.Controls.Add(this.btn_reload);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgv_RoleUser);
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "GrantRevokeRole";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GrantRevokeRole";
+            this.Text = "Grant or Revoke Role";
             this.Load += new System.EventHandler(this.GrantRevokeRole_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_RoleUser)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -211,21 +235,21 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgv_RoleUser;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbUser1;
+        private System.Windows.Forms.Button commitGrant;
+        private System.Windows.Forms.TextBox tbRole1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button commitRevoke;
+        private System.Windows.Forms.TextBox tbRole2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbUser2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label grant;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btn_reload;
     }
 }

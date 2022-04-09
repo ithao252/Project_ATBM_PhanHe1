@@ -36,5 +36,10 @@ namespace ATBM_N08
 
             MessageBox.Show($"{username} created successfully!");
         }
+
+        private void txtbUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

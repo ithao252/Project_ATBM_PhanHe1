@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ATBM_N08.BUS;
 
 namespace ATBM_N08
 {
@@ -44,10 +45,28 @@ namespace ATBM_N08
 
         private void btn_createRole_Click(object sender, EventArgs e)
         {
+            String role = tbRole.Text;
+            String password = tbPass.Text;
+            int result = cb_withoutpass.CheckState == CheckState.Checked ? 1 : 0;
+            try
+            {
+                BUS_Role.Instance.CreateRole(role, password, result);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
 
+            MessageBox.Show($"{role} is created successfully!");
         }
 
         private void btn_withoutpass_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_withoutpass_CheckedChanged(object sender, EventArgs e)
         {
 
         }

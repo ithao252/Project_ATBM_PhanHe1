@@ -124,6 +124,7 @@
     <Compile Include="DTO\DTO_PrivilegeRole.cs" />
     <Compile Include="DTO\DTO_Privilege.cs" />
     <Compile Include="DTO\DTO_DetailTable.cs" />
+    <Compile Include="DTO\DTO_RoleUser.cs" />
     <Compile Include="DTO\DTO_Table.cs" />
     <Compile Include="DTO\DTO_Role.cs" />
     <Compile Include="DTO\DTO_User.cs" />

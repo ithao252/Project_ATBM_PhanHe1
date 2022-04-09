@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_withoutpass = new System.Windows.Forms.CheckBox();
+            this.cb_withoutpass = new System.Windows.Forms.CheckBox();
             this.btn_createRole = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txbPass = new System.Windows.Forms.TextBox();
+            this.tbPass = new System.Windows.Forms.TextBox();
             this.lb_Password = new System.Windows.Forms.Label();
             this.lb_Role = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbRole = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btn_withoutpass
+            // cb_withoutpass
             // 
-            this.btn_withoutpass.AutoSize = true;
-            this.btn_withoutpass.Location = new System.Drawing.Point(471, 97);
-            this.btn_withoutpass.Name = "btn_withoutpass";
-            this.btn_withoutpass.Size = new System.Drawing.Size(210, 29);
-            this.btn_withoutpass.TabIndex = 10;
-            this.btn_withoutpass.Text = "without password";
-            this.btn_withoutpass.UseVisualStyleBackColor = true;
-            this.btn_withoutpass.CheckedChanged += new System.EventHandler(this.btn_withoutpass_CheckedChanged);
+            this.cb_withoutpass.AutoSize = true;
+            this.cb_withoutpass.Location = new System.Drawing.Point(471, 97);
+            this.cb_withoutpass.Name = "cb_withoutpass";
+            this.cb_withoutpass.Size = new System.Drawing.Size(210, 29);
+            this.cb_withoutpass.TabIndex = 10;
+            this.cb_withoutpass.Text = "without password";
+            this.cb_withoutpass.UseVisualStyleBackColor = true;
+            this.cb_withoutpass.CheckedChanged += new System.EventHandler(this.cb_withoutpass_CheckedChanged);
             // 
             // btn_createRole
             // 
@@ -64,10 +64,10 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.txbPass);
+            this.panel1.Controls.Add(this.tbPass);
             this.panel1.Controls.Add(this.lb_Password);
             this.panel1.Controls.Add(this.lb_Role);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.tbRole);
             this.panel1.Location = new System.Drawing.Point(33, 26);
             this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
@@ -75,14 +75,14 @@
             this.panel1.Size = new System.Drawing.Size(408, 110);
             this.panel1.TabIndex = 12;
             // 
-            // txbPass
+            // tbPass
             // 
-            this.txbPass.Location = new System.Drawing.Point(130, 69);
-            this.txbPass.Margin = new System.Windows.Forms.Padding(6);
-            this.txbPass.Name = "txbPass";
-            this.txbPass.PasswordChar = '•';
-            this.txbPass.Size = new System.Drawing.Size(256, 31);
-            this.txbPass.TabIndex = 1;
+            this.tbPass.Location = new System.Drawing.Point(130, 69);
+            this.tbPass.Margin = new System.Windows.Forms.Padding(6);
+            this.tbPass.Name = "tbPass";
+            this.tbPass.PasswordChar = '•';
+            this.tbPass.Size = new System.Drawing.Size(256, 31);
+            this.tbPass.TabIndex = 1;
             // 
             // lb_Password
             // 
@@ -107,16 +107,16 @@
             this.lb_Role.TabIndex = 0;
             this.lb_Role.Text = "Role:";
             // 
-            // textBox1
+            // tbRole
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tbRole.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(130, 18);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(256, 31);
-            this.textBox1.TabIndex = 1;
+            this.tbRole.Location = new System.Drawing.Point(130, 18);
+            this.tbRole.Margin = new System.Windows.Forms.Padding(6);
+            this.tbRole.Name = "tbRole";
+            this.tbRole.Size = new System.Drawing.Size(256, 31);
+            this.tbRole.TabIndex = 1;
             // 
             // createRole
             // 
@@ -125,7 +125,7 @@
             this.ClientSize = new System.Drawing.Size(714, 230);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_createRole);
-            this.Controls.Add(this.btn_withoutpass);
+            this.Controls.Add(this.cb_withoutpass);
             this.Name = "createRole";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -139,12 +139,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.CheckBox btn_withoutpass;
+        private System.Windows.Forms.CheckBox cb_withoutpass;
         private System.Windows.Forms.Button btn_createRole;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txbPass;
+        private System.Windows.Forms.TextBox tbPass;
         private System.Windows.Forms.Label lb_Password;
         private System.Windows.Forms.Label lb_Role;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbRole;
     }
 }

@@ -57,43 +57,84 @@ namespace ATBM_N08.BUS
             return result;
         }
 
+        public List<DTO_RoleUser> GetRoleUser()
+        {
+            //Get all data from DAO Layer
+            List<DTO_RoleUser> result = new List<DTO_RoleUser>();
+            DataTable data = DAO_Role.Instance.GetRoleOfUser();
 
-        //public void DeleteUser(String username, bool cascade)
-        //{
-        //    try
-        //    {
-        //        DAO_User.Instance.DeleteUser(username, cascade);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception(ex.Message);
-        //    }
-        //}
+            foreach (DataRow row in data.Rows)
+            {
+                DTO_RoleUser tmpObject = new DTO_RoleUser();
 
-        //public void UpdateUser(String username, bool isLock, string password)
-        //{
-        //    try
-        //    {
-        //        DAO_User.Instance.UpdateUser(username, isLock, password);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception(ex.Message);
-        //    }
-        //}
+                tmpObject.Grantee = row["GRANTEE"].ToString();
+                tmpObject.Granted_Role = row["GRANTED_ROLE"].ToString();
 
+                result.Add(tmpObject);
+            }
 
-        //public void CreateUser(String username, String password)
-        //{
-        //    try
-        //    {
-        //        DAO_User.Instance.CreateUser(username, password);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception(ex.Message);
-        //    }
-        //}
+            return result;
+        }
+
+        public void RevokeRoleFromUser(String user, String role)
+        {
+            try
+            {
+                DAO_Role.Instance.RevokeRoleFromUser(user, role);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public void GrantRoleToUser(String user, String role)
+        {
+            try
+            {
+                DAO_Role.Instance.GrantRoleToUser(user, role);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public void DeleteRole(String role)
+        {
+            try
+            {
+                DAO_Role.Instance.DeleteRole(role);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public void UpdateRole(String role, String newpassword, int result)
+        {
+            try
+            {
+                DAO_Role.Instance.UpdateRole(role, newpassword, result);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public void CreateRole(String role, String password, int result)
+        {
+            try
+            {
+                DAO_Role.Instance.CreateRole(role, password, result);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
 
     }
 }
