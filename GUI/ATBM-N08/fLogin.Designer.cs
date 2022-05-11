@@ -164,7 +164,7 @@
             this.cb_VaiTro.FormattingEnabled = true;
             this.cb_VaiTro.Items.AddRange(new object[] {
             "Admin",
-            "DBA",
+            "DBA_2",
             "Bác Sĩ",
             "Bệnh Nhân",
             "Thanh Tra",
