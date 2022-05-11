@@ -16,7 +16,7 @@ namespace ATBM_N08.DAO
       
         public static void InitConnection(String username, String password)
         {
-            String connectionString = $"Data Source=localhost/ORCL;User ID = {username}; Password={password}";
+            String connectionString = $"Data Source=10.211.55.5/XEPDB1;User ID = {username}; Password={password}";
             
             OracleConnection connection = null;
             try
