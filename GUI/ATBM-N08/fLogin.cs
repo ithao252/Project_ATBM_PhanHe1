@@ -74,7 +74,7 @@ namespace ATBM_N08
                     cmd.CommandText =
                         "SELECT granted_role " +
                         "FROM USER_ROLE_PRIVS " +
-                        "Where granted_role = 'DBA_PH2'"; // Sql statement
+                        "Where granted_role = 'DBA_2'"; // Sql statement
                     break;
             }
 
@@ -86,8 +86,8 @@ namespace ATBM_N08
             int count = dt.Rows.Count;
             if (count == 1)
             {
-                // DBA_BV dang nhap vo tai khoan khac
-                if (txtUsername.Text == "DBA_QLBV" && (cb_VaiTro.Text == "Admin" ))
+               
+                if (txtUsername.Text == "DBA_QLBV" && (cb_VaiTro.Text == "Admin" || cb_VaiTro.Text == "DBA_2"))
                     return true;
                 else if (txtUsername.Text != "DBA_QLBV")
                     return true;
@@ -191,12 +191,15 @@ namespace ATBM_N08
                     else
                         MessageBox.Show(err_str, null, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
-                case "Admin 2":
+                case "DBA_2":
                     if (Check_Role(0) == true)
                     {
                         this.Hide();
+                        DBA_PH2 fr = new DBA_PH2(username, password);
+                        con.Close();
+                        fr.Show();
 
-                       
+
                     }
                     else
                         MessageBox.Show(err_str, null, MessageBoxButtons.OK, MessageBoxIcon.Warning);
