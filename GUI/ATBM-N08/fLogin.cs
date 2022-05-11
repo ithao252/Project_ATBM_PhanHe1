@@ -103,7 +103,7 @@ namespace ATBM_N08
         {
             String username = txtUsername.Text;
             String password = txtPassword.Text.ToString();
-            string connectionString = $"Data Source=localhost/ORCL;User ID = {username}; Password={password}";
+            string connectionString = $"Data Source=localhost/XE;User ID = {username}; Password={password}";
             con = new OracleConnection(connectionString);
             try
             {
@@ -184,7 +184,9 @@ namespace ATBM_N08
                     {
                         this.Hide();
 
-                      
+                        fNghienCuu fr = new fNghienCuu(username, password);
+                        con.Close();
+                        fr.ShowDialog();
                     }
                     else
                         MessageBox.Show(err_str, null, MessageBoxButtons.OK, MessageBoxIcon.Warning);
