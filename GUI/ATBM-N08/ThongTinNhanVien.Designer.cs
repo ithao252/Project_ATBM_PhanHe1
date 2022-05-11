@@ -30,8 +30,8 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtb_MaNV = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtb_HoTen = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,8 +39,8 @@
             this.txtb_Phai = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtb_CMND = new System.Windows.Forms.TextBox();
@@ -93,6 +93,13 @@
             this.panel1.Size = new System.Drawing.Size(394, 40);
             this.panel1.TabIndex = 7;
             // 
+            // txtb_MaNV
+            // 
+            this.txtb_MaNV.Location = new System.Drawing.Point(130, 13);
+            this.txtb_MaNV.Name = "txtb_MaNV";
+            this.txtb_MaNV.Size = new System.Drawing.Size(232, 20);
+            this.txtb_MaNV.TabIndex = 7;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -102,13 +109,6 @@
             this.label1.Size = new System.Drawing.Size(121, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã Nhân viên:";
-            // 
-            // txtb_MaNV
-            // 
-            this.txtb_MaNV.Location = new System.Drawing.Point(130, 13);
-            this.txtb_MaNV.Name = "txtb_MaNV";
-            this.txtb_MaNV.Size = new System.Drawing.Size(232, 20);
-            this.txtb_MaNV.TabIndex = 7;
             // 
             // panel2
             // 
@@ -171,6 +171,13 @@
             this.panel4.Size = new System.Drawing.Size(394, 40);
             this.panel4.TabIndex = 10;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(130, 10);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(232, 20);
+            this.dateTimePicker1.TabIndex = 2;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -180,13 +187,6 @@
             this.label5.Size = new System.Drawing.Size(91, 21);
             this.label5.TabIndex = 1;
             this.label5.Text = "Ngày sinh:";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(130, 10);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(232, 20);
-            this.dateTimePicker1.TabIndex = 2;
             // 
             // label6
             // 
@@ -391,6 +391,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Name = "ThongTinNhanVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin nhân viên";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ThongTinNhanVien_FormClosed);
             this.Load += new System.EventHandler(this.ThongTinNhanVien_Load);

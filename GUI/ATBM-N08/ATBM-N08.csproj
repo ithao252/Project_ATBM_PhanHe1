@@ -104,7 +104,6 @@
     <Compile Include="CheckPrivilege.Designer.cs">
       <DependentUpon>CheckPrivilege.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConnectionString.cs" />
     <Compile Include="createRole.cs">
       <SubType>Form</SubType>
     </Compile>
