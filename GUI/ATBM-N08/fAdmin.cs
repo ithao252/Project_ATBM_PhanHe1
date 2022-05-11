@@ -26,13 +26,13 @@ namespace ATBM_N08
         {
             if (this.userPanel.Controls.Count > 0)
                 this.userPanel.Controls.RemoveAt(0);
-           Form f = Form as Form;
-           f.TopLevel = false;
-           f.Dock = DockStyle.Fill;
-           this.userPanel.Controls.Add(f);
-           this.userPanel.Tag = f;
-           f.Show();
-  
+            Form f = Form as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.userPanel.Controls.Add(f);
+            this.userPanel.Tag = f;
+            f.Show();
+
 
 
         }

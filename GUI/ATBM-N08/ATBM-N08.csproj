@@ -104,6 +104,7 @@
     <Compile Include="CheckPrivilege.Designer.cs">
       <DependentUpon>CheckPrivilege.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConnectionString.cs" />
     <Compile Include="createRole.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +117,12 @@
     <Compile Include="DAO\DAO_Role.cs" />
     <Compile Include="DAO\DAO_User.cs" />
     <Compile Include="DAO\DatabaseConnect.cs" />
+    <Compile Include="DBA_PH2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBA_PH2.Designer.cs">
+      <DependentUpon>DBA_PH2.cs</DependentUpon>
+    </Compile>
     <Compile Include="deleteRole.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +146,36 @@
     </Compile>
     <Compile Include="fAddUser.Designer.cs">
       <DependentUpon>fAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBacSi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBacSi.Designer.cs">
+      <DependentUpon>fBacSi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBenhNhan.Designer.cs">
+      <DependentUpon>fBenhNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCoSoYTe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCoSoYTe.Designer.cs">
+      <DependentUpon>fCoSoYTe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNghienCuu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNghienCuu.Designer.cs">
+      <DependentUpon>fNghienCuu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThanhTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThanhTra.Designer.cs">
+      <DependentUpon>fThanhTra.cs</DependentUpon>
     </Compile>
     <Compile Include="ListPrivilege.cs">
       <SubType>Form</SubType>
@@ -211,6 +248,12 @@
     <EmbeddedResource Include="AddTable.resx">
       <DependentUpon>AddTable.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="ThongTinNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinNhanVien.Designer.cs">
+      <DependentUpon>ThongTinNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="updateRole.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fAddUser.resx">
       <DependentUpon>fAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThanhTra.resx">
+      <DependentUpon>fThanhTra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListPrivilege.resx">
       <DependentUpon>ListPrivilege.cs</DependentUpon>
@@ -277,6 +323,9 @@
     </Compile>
     <EmbeddedResource Include="TableManage.resx">
       <DependentUpon>TableManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinNhanVien.resx">
+      <DependentUpon>ThongTinNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="updateRole.resx">
       <DependentUpon>updateRole.cs</DependentUpon>

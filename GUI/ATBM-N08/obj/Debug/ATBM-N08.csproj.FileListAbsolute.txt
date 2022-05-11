@@ -82,3 +82,34 @@ D:\STUDY\N3_HK2\ATBM-HTTT\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.L
 \\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM-N08.pdb
 \\Mac\Home\Downloads\ISsecurity\Project\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.ListViews.resources
 D:\STUDY\N3_HK2\ATBM-HTTT\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.ListViews.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\bin\Debug\ATBM-N08.exe.config
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\bin\Debug\ATBM-N08.exe
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\bin\Debug\ATBM-N08.pdb
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM-N08.csproj.AssemblyReference.cache
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM-N08.csproj.SuggestedBindingRedirects.cache
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.AddTable.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.CheckPrivilege.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.createRole.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.deleteRole.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.fAddUser.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.ListPrivilege.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.ListViews.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.ListTable.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.fListUser.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.fLogin.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.fAdmin.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.GrantRevokeRole.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.Home.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.ListRole.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.PrivilegeManage.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.Properties.Resources.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.TableManage.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.updateRole.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.UpdateUserInfo.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM-N08.csproj.GenerateResource.cache
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM-N08.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM-N08.csproj.CopyComplete
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM-N08.exe
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM-N08.pdb
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.fThanhTra.resources
+C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.ThongTinNhanVien.resources
