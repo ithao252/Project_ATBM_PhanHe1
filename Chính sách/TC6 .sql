@@ -1,0 +1,11 @@
+CREATE OR REPLACE VIEW NV_xem_thong_tin
+AS 
+(
+  SELECT MANV,HOTEN,PHAI,NGAYSINH, CMND,QUEQUAN,GIAI_MA(SODT,'A1A2A3A4A5A6CAFE') as SODT, CSYT,vaitro,chuyenkhoa
+  FROM NHANVIEN 
+  WHERE upper(MANV) = USER
+);
+CREATE OR Replace PUBLIC SYNONYM NV_xem_thong_tin FOR DBA_QLBV.NV_xem_thong_tin;
+GRANT SELECT, UPDATE ON NV_xem_thong_tin TO THANHTRA;
+--Test
+select * from DBA_QLBV.NV_xem_thong_tin;
