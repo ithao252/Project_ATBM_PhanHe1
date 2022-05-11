@@ -111,7 +111,7 @@ namespace ATBM_N08
                 }
                 else
                 {
-                    string message = "Nothing Happened";
+                    string message = "Error! Nothing Happened";
                     string title = "Warning";
                     MessageBoxButtons buttons = MessageBoxButtons.OK;
                     MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);

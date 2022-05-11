@@ -272,6 +272,9 @@
     <EmbeddedResource Include="createRole.resx">
       <DependentUpon>createRole.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DBA_PH2.resx">
+      <DependentUpon>DBA_PH2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="deleteRole.resx">
       <DependentUpon>deleteRole.cs</DependentUpon>
     </EmbeddedResource>
