@@ -278,6 +278,9 @@
     <EmbeddedResource Include="fAddUser.resx">
       <DependentUpon>fAddUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fNghienCuu.resx">
+      <DependentUpon>fNghienCuu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fThanhTra.resx">
       <DependentUpon>fThanhTra.cs</DependentUpon>
     </EmbeddedResource>
