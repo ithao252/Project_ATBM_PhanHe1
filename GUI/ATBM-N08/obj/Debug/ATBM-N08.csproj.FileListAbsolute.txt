@@ -114,3 +114,6 @@ C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_Ph
 C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.fThanhTra.resources
 C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.ThongTinNhanVien.resources
 C:\Users\Nguyen Thanh Thao\Downloads\Project_ATBM_PhanHe1-master\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.DBA_PH2.resources
+D:\STUDY\N3_HK2\ATBM-HTTT\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.fThanhTra.resources
+D:\STUDY\N3_HK2\ATBM-HTTT\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.ThongTinNhanVien.resources
+D:\STUDY\N3_HK2\ATBM-HTTT\Project_ATBM_PhanHe1\GUI\ATBM-N08\obj\Debug\ATBM_N08.fNghienCuu.resources
