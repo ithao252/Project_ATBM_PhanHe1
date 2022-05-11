@@ -1,4 +1,3 @@
--- Su dung VPD de rang buoc dieu kien tren cac bang
 CREATE OR REPLACE VIEW view_HSBA_QLCSYT
 AS 
 SELECT MAHSBA,MABN, NGAY, CHANDOAN, MABS, MAKHOA, MACSYT, KETLUAN
