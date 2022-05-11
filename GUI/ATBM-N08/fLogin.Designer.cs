@@ -38,6 +38,8 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cb_VaiTro = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -117,7 +119,7 @@
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(21, 333);
+            this.btnLogin.Location = new System.Drawing.Point(21, 387);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(291, 33);
             this.btnLogin.TabIndex = 7;
@@ -130,7 +132,7 @@
             this.Exit.AutoSize = true;
             this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(97)))), ((int)(((byte)(136)))));
-            this.Exit.Location = new System.Drawing.Point(138, 380);
+            this.Exit.Location = new System.Drawing.Point(136, 423);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(44, 18);
             this.Exit.TabIndex = 8;
@@ -147,12 +149,40 @@
             this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(16, 335);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 25);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Chọn vai trò:";
+            // 
+            // cb_VaiTro
+            // 
+            this.cb_VaiTro.FormattingEnabled = true;
+            this.cb_VaiTro.Items.AddRange(new object[] {
+            "Admin",
+            "DBA",
+            "Bác Sĩ",
+            "Bệnh Nhân",
+            "Thanh Tra",
+            "Nghiên Cứu",
+            "Cơ Sở Y Tế"});
+            this.cb_VaiTro.Location = new System.Drawing.Point(148, 341);
+            this.cb_VaiTro.Name = "cb_VaiTro";
+            this.cb_VaiTro.Size = new System.Drawing.Size(164, 21);
+            this.cb_VaiTro.TabIndex = 11;
+            // 
             // fLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(334, 450);
+            this.ClientSize = new System.Drawing.Size(334, 476);
+            this.Controls.Add(this.cb_VaiTro);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.btnLogin);
@@ -189,6 +219,8 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label Exit;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cb_VaiTro;
     }
 }
 
